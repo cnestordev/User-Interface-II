@@ -1,1 +1,197 @@
-/* Add CSS styling here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+}
+
+* {
+  font-size: 62.5%;
+}
+
+img {
+  width: 400px;
+}
+
+nav {
+  border: 2px solid green;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.nav-logo-container {
+  background-color: blueviolet;
+}
+
+.nav-logo-container h3 {
+  font-size: 2rem;
+}
+
+.nav-links-container {
+  background-color: rgba(250, 215, 125, 0.6);
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 2% 5%;
+  flex-basis: 20%;
+}
+
+.header {
+  background-color: rgb(243, 243, 109);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.bio-container {
+  background-color: teal;
+  flex-basis: 80%;
+}
+
+.bio-container img {
+  width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  height: 50vh;
+  background-image: url('https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2982&q=80');
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2%;
+}
+
+.image-container button {
+  border: 1px solid white;
+  background: #cccccc;
+  box-shadow: 0 0 5px 2px #fff;
+  border-radius: 3px;
+  padding: 1.5% 3%;
+  width: 15%;
+}
+
+.image-container button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #fff;
+  transition: 200ms;
+}
+
+.projects-container {
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  flex-basis: 31%;
+  border: 1px solid green;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project p {
+  font-size: 1.2rem;
+}

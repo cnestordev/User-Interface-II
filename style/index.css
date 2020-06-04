@@ -162,9 +162,10 @@ nav {
 
 .image-container button {
   border: 1px solid white;
-  background: #cccccc;
-  box-shadow: 0 0 5px 2px #fff;
+  background: ghostwhite;
+  box-shadow: 0 0 5px 2px #9c9c9c;
   border-radius: 3px;
+  font-size: 1.4rem;
   padding: 1.5% 3%;
   width: 15%;
 }
@@ -180,7 +181,6 @@ nav {
 }
 
 .projects-container {
-  background-color: red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -188,7 +188,6 @@ nav {
 
 .project {
   flex-basis: 31%;
-  border: 1px solid green;
   margin-bottom: 2%;
   text-align: center;
 }
@@ -198,12 +197,12 @@ nav {
 }
 
 .project p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .footer {
   height: 12vh;
-  background: blue;
+  background: #888;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,4 +212,5 @@ nav {
   border: 1px solid #fff;
   border-radius: 3px;
   padding: 1% 2%;
+  font-size: 1.2rem;
 }

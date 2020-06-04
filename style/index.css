@@ -83,11 +83,11 @@ video {
   padding: 0;
   border: 0;
   font-size: 62.5%;
-  font: inherit;
 }
 
 * {
   font-size: 62.5%;
+  font-family: 'Rubik';
 }
 
 img {
@@ -95,38 +95,39 @@ img {
 }
 
 nav {
-  border: 2px solid green;
   padding: 1%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2%;
 }
 
-.nav-logo-container {
-  background-color: blueviolet;
-}
-
 .nav-logo-container h3 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .nav-links-container {
-  background-color: rgba(250, 215, 125, 0.6);
   flex-basis: 40%;
   display: flex;
   justify-content: space-between;
 }
 
 .nav-link {
+  text-decoration: none;
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 3px;
   padding: 2% 5%;
   flex-basis: 20%;
+  text-align: center;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  background-color: #f8f8ff;
 }
 
 .header {
-  background-color: rgb(243, 243, 109);
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
@@ -134,7 +135,7 @@ nav {
 
 .bio-container {
   background-color: teal;
-  flex-basis: 80%;
+  flex-basis: 85%;
 }
 
 .bio-container img {
@@ -154,7 +155,7 @@ nav {
 }
 
 .image-container h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #fff;
   margin-bottom: 2%;
 }
@@ -171,7 +172,11 @@ nav {
 .image-container button:hover {
   cursor: pointer;
   box-shadow: 0 0 0 0 #fff;
-  transition: 200ms;
+  transition: 300ms;
+}
+
+.projects-section {
+  margin-bottom: 2%;
 }
 
 .projects-container {
@@ -194,4 +199,18 @@ nav {
 
 .project p {
   font-size: 1.2rem;
+}
+
+.footer {
+  height: 12vh;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer button {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 1% 2%;
 }

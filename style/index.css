@@ -107,7 +107,7 @@ nav {
 }
 
 .nav-links-container {
-  flex-basis: 40%;
+  flex-basis: 30%;
   display: flex;
   /* justify-content: space-between; */
 }

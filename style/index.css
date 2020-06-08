@@ -147,11 +147,20 @@ nav {
 .image-container {
   width: 100%;
   height: 50vh;
-  background-image: url('https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2982&q=80');
-  background-size: cover;
-  background-position: bottom;
   box-shadow: 0 0 13px 6px #0e151b;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-background {
+  background-image: url(https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2982&q=80);
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,4 +255,104 @@ nav {
   font-size: 2.2rem;
   color: #fff;
   margin-right: 2%;
+}
+
+@media (max-width: 800px) {
+  .nav-links-container {
+    flex-basis: 50%;
+    justify-content: space-between;
+    margin-bottom: 3%;
+  }
+
+  .nav-links-container a {
+    color: #fff;
+  }
+
+  .bio-container {
+    flex-basis: 90%;
+  }
+
+  .image-container button {
+    width: 22%;
+    padding: 2.5% 0;
+  }
+
+  .projects-container {
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    height: 16vh;
+  }
+
+  .footer button {
+    padding: 2% 5%;
+    margin-bottom: 2%;
+  }
+
+  .project {
+    flex-basis: 42.5%;
+  }
+
+  .social-container {
+    justify-content: space-between;
+    width: 12%;
+  }
+
+  .social-container i {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-logo-container h3 {
+    margin-bottom: 5%;
+    font-size: 8rem;
+  }
+
+  .nav-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .nav-link {
+    padding: 11% 0%;
+    flex-basis: 20%;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+
+  .bio-container {
+    flex-basis: 88%;
+  }
+
+  .image-container button {
+    width: 40%;
+    padding: 3.5% 0;
+  }
+
+  .project {
+    margin-bottom: 8%;
+  }
+
+  .footer {
+    height: 25vh;
+  }
+
+  .footer button {
+    width: 36%;
+    padding: 4% 0;
+    margin-bottom: 5%;
+  }
+
+  .social-container {
+    width: 30%;
+  }
 }

@@ -257,6 +257,42 @@ nav {
   margin-right: 2%;
 }
 
+@media (min-width: 1900px) and (max-width: 1920px) {
+  .nav-logo-container h3 {
+    font-size: 8rem;
+  }
+
+  .nav-links-container {
+    align-items: start;
+  }
+
+  .nav-link {
+    font-size: 3rem;
+  }
+
+  .image-container a {
+    font-size: 2.5rem;
+  }
+
+  .project p {
+    font-size: 3rem;
+  }
+
+  .footer a {
+    font-size: 2.2rem;
+  }
+
+  .social-container i {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .nav-links-container {
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 800px) {
   .nav-links-container {
     flex-basis: 50%;
@@ -354,6 +390,34 @@ nav {
 
   .social-container {
     width: 30%;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    margin-bottom: 7%;
+  }
+
+  .nav-links-container {
+    width: 38%;
+  }
+
+  .bio-container {
+    flex-basis: 96%;
+  }
+
+  .image-container h1 {
+    text-align: center;
+    margin-bottom: 7%;
+  }
+
+  .image-container button {
+    width: 50%;
+    padding: 4.5% 0;
+  }
+
+  .project {
+    flex-basis: 85%;
   }
 }
 

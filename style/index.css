@@ -356,3 +356,50 @@ nav {
     width: 30%;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: ghostwhite;
+  }
+
+  .nav-logo-container h3 {
+    color: #383838;
+  }
+
+  .nav-link {
+    background-color: rgb(36, 78, 99);
+  }
+
+  .nav-link:hover {
+    background-color: #383838;
+    color: ghostwhite;
+    transition: 200ms;
+  }
+
+  .image-container button:hover {
+    background-color: #383838;
+    color: ghostwhite;
+  }
+
+  .project p {
+    color: #383838;
+  }
+
+  .footer {
+    background-color: #244e63;
+  }
+
+  .footer a {
+    font-size: 1.5rem;
+  }
+
+  .footer button:hover {
+    background-color: #383838;
+    transition: 200ms;
+  }
+
+  .footer button:hover a {
+    color: ghostwhite;
+    transition: 200ms;
+  }
+}

@@ -1,1 +1,469 @@
-/* Add CSS styling here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+}
+
+* {
+  font-size: 62.5%;
+  font-family: 'Rubik';
+}
+
+body {
+  background-color: #252b31;
+}
+
+nav {
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.nav-logo-container h3 {
+  font-size: 4rem;
+  color: #a2a2a2;
+}
+
+.nav-links-container {
+  flex-basis: 30%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.nav-link {
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: rgba(36, 78, 99, 0.4);
+  border: 1px solid white;
+  padding: 2% 5%;
+  flex-basis: 20%;
+  text-align: center;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  background-color: #244e63;
+  color: #c3c3c3;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.bio-container {
+  flex-basis: 85%;
+}
+
+.bio-container img {
+  width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  height: 50vh;
+  box-shadow: 0 0 13px 6px #0e151b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-background {
+  background-image: url(https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2982&q=80);
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container h1 {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 2%;
+}
+
+.image-container button {
+  border: 1px solid white;
+  background: ghostwhite;
+  box-shadow: 0 0 5px 2px #9c9c9c;
+  border-radius: 3px;
+  padding: 1.5% 3%;
+  width: 15%;
+}
+
+.image-container a {
+  font-size: 1.4rem;
+}
+
+.image-container button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #fff;
+  transition: 300ms;
+}
+
+.projects-section {
+  margin-bottom: 2%;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  flex-basis: 31%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project p {
+  font-size: 1.8rem;
+  color: #c3c3c3;
+}
+
+.footer {
+  height: 14vh;
+  background: #31373d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer button {
+  border: 1px solid #757474;
+  border-radius: 3px;
+  padding: 1% 2%;
+  margin-bottom: 1%;
+}
+
+.footer button:hover {
+  background-color: #757474;
+  cursor: pointer;
+}
+
+.footer a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.social-container {
+  /* background-color: red; */
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-container i {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-right: 2%;
+}
+
+@media (min-width: 1900px) and (max-width: 1920px) {
+  .nav-logo-container h3 {
+    font-size: 8rem;
+  }
+
+  .nav-links-container {
+    align-items: start;
+  }
+
+  .nav-link {
+    font-size: 3rem;
+  }
+
+  .image-container a {
+    font-size: 2.5rem;
+  }
+
+  .project p {
+    font-size: 3rem;
+  }
+
+  .footer a {
+    font-size: 2.2rem;
+  }
+
+  .social-container i {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .nav-links-container {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-links-container {
+    flex-basis: 50%;
+    justify-content: space-between;
+    margin-bottom: 3%;
+  }
+
+  .nav-links-container a {
+    color: #fff;
+  }
+
+  .bio-container {
+    flex-basis: 90%;
+  }
+
+  .image-container button {
+    width: 22%;
+    padding: 2.5% 0;
+  }
+
+  .projects-container {
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    height: 16vh;
+  }
+
+  .footer button {
+    padding: 2% 5%;
+    margin-bottom: 2%;
+  }
+
+  .project {
+    flex-basis: 42.5%;
+  }
+
+  .social-container {
+    justify-content: space-between;
+    width: 12%;
+  }
+
+  .social-container i {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-logo-container h3 {
+    margin-bottom: 5%;
+    font-size: 8rem;
+  }
+
+  .nav-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .nav-link {
+    padding: 11% 0%;
+    flex-basis: 20%;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+
+  .bio-container {
+    flex-basis: 88%;
+  }
+
+  .image-container button {
+    width: 40%;
+    padding: 3.5% 0;
+  }
+
+  .project {
+    margin-bottom: 8%;
+  }
+
+  .footer {
+    height: 25vh;
+  }
+
+  .footer button {
+    width: 36%;
+    padding: 4% 0;
+    margin-bottom: 5%;
+  }
+
+  .social-container {
+    width: 30%;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    margin-bottom: 7%;
+  }
+
+  .nav-links-container {
+    width: 38%;
+  }
+
+  .bio-container {
+    flex-basis: 96%;
+  }
+
+  .image-container h1 {
+    text-align: center;
+    margin-bottom: 7%;
+  }
+
+  .image-container button {
+    width: 50%;
+    padding: 4.5% 0;
+  }
+
+  .project {
+    flex-basis: 85%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: ghostwhite;
+  }
+
+  .nav-logo-container h3 {
+    color: #383838;
+  }
+
+  .nav-link {
+    background-color: rgb(36, 78, 99);
+  }
+
+  .nav-link:hover {
+    background-color: #383838;
+    color: ghostwhite;
+    transition: 200ms;
+  }
+
+  .image-container button:hover {
+    background-color: #383838;
+    color: ghostwhite;
+  }
+
+  .project p {
+    color: #383838;
+  }
+
+  .footer {
+    background-color: #244e63;
+  }
+
+  .footer a {
+    font-size: 1.5rem;
+  }
+
+  .footer button:hover {
+    background-color: #383838;
+    transition: 200ms;
+  }
+
+  .footer button:hover a {
+    color: ghostwhite;
+    transition: 200ms;
+  }
+}
